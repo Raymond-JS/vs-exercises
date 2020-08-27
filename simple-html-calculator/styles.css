@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Crimson Pro', serif;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 30%;
+    min-width: 400px;
+    min-height: 600px;
+    border: 5px solid black;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #2C2C2E;
+    color: white; 
+    
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #FF6F00;
+    padding-bottom: 5px;
+    display: inline-block;
+    font-size: 3rem;
+    
+    
+
+}
+
+input {
+  padding: .2rem;
+  margin-bottom: 5px;
+  width: 130px;
+  height: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #FF6F00;
+}
+
+div.add-answer,
+div.subtract-answer,
+div.multi-answer {
+    padding: .5rem 0;
+    font-size: 16px;
+    font-weight: 900;
+    font-size: 30px;
+    
+}
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    background-color: #FF6F00;
+    color: white;
+    font-size: 15px;
+    transition-duration: 0.3s;
+}
+button:hover {
+    background-color:  white; /* Green */
+    font-size: 17px;
+    color: #2C2C2E;
+  }
+  button:focus {
+    background-color:  white; /* Green */
+    color: #2C2C2E;
+  }
+
+  

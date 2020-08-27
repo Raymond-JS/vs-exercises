@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" >
+        <title>Simple Calculator</title>
+    </head>
+    <body>
+<header>
+    <h1>Simple HTML Calculator</h1>
+</header>
+<div class="container">
+    <div>
+        <h2>+ Add +</h2>
+        <form name="add">
+            <input type="number" name="numOne" placeholder="Input Number" min="0" /><br>
+            <input type="number" name="numTwo" placeholder="Input Number" min="0"   /><br>
+            <button>Calculate</button>
+        </form>
+        <div class="add-answer">
+
+        </div>
+    </div>
+    <div>
+        <h2>- Subtract - </h2>
+        <form name="subtract">
+            <input type="number" name="subOne" placeholder="Input Number" min="0"/><br>
+            <input type="number" name="subTwo" placeholder="Input Number" min="0"/><br>
+            <button id="subBtn">Calculate</button>
+        </form>
+        <div class="subtract-answer">
+
+        </div>
+    </div>
+    <div>
+        <h2>x Multiply x </h2>
+        <form name="multiply">
+            <input type="number" name="multiOne" placeholder="Input Number" min="0"/><br>
+            <input type="number" name="multiTwo" placeholder="Input Number" min="0"/><br>
+            <button>Calculate</button>
+        </form>
+        <div class="multi-answer">
+
+        </div>
+
+    </div>
+</div>
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
