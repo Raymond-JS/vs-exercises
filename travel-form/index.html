@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Fly The Friendly Skies</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Book Your Flight Today</h3>
+            <p>Enjoy flying the friendly skies</p>
+            <form name="registration">
+            
+                 <input type="text" name="first-name" placeholder="First Name" required/><br>
+                 <input type="text" name="last-name" placeholder="Last Name" required/><br>
+                 <input type="number" name="age" min="0" placeholder="Age" required/><br>
+               
+            <div class="sex">
+                Male: <input type="radio" name="gender" value="male" />
+                Female: <input type="radio" name="gender" value="female" /><br>
+            </div>
+            <div >
+                <h3>Destination:</h3>
+                <select id="destination" name="destination" required>
+                    <option value="New York">New York</option>
+                    <option value="Las Vegas">Las Vegas</option>
+                    <option Value="Canada">Canada</option>
+                </select>
+            </div>
+            <div class="checkboxes">
+                <h3>Dietary Restrictions: </h3>
+                Vegetarian <input type="checkbox" name="diet" value="Vegetarian" />
+                Kosher <input type="checkbox" name="diet" value="Kosher" />
+                Lactose Intolerant <input type="checkbox" name="diet" value="Lactose Intolerant" />
+            </div>
+                <button>Submit</button>
+
+            
+
+
+            </form>
+
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
