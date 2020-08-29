@@ -1,0 +1,157 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Bangers', cursive, sans-serif;
+    font-size: 18px;
+    background-color: #E1EBE4;
+    text-align: center;
+}
+
+h1 {
+    color: #0468B3;
+    text-shadow: 2px 2px 5px #FA343A;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin: 36px auto 0 auto;
+    border-bottom: 5px dotted #FA343A;
+    padding-bottom: 10px;
+    width: 300px;
+}
+
+h2 {
+    color: #FA343A;
+    text-shadow: 1px 1px 2px#0468B3;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 10px 0 0 0;
+}
+p {
+    margin-top: 10px;
+}
+
+img {
+    border-radius: 100%;
+    border: 10px solid #0468B3;
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 5%;
+    max-width: 930px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0468B3;
+    position: relative;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+footer div {
+    max-width: 310px;
+    padding: 5%;
+    margin: 10px auto;
+    border-bottom: 1px solid white;
+    
+}
+
+button {
+    background-color: #FA343A;
+    color:  #0468B3;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    margin: 10px 0 0 0;
+}
+
+
+
+input {
+    width: 150px;
+    padding: 1em;
+    border: 2px solid #FA343A;
+}
+
+.total {
+    padding: 1em;
+    font-size: 3rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    
+}
+a:hover {
+    color: #FA343A;
+}
+
+.address h3 {
+    font-family: sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        width: 100%;
+        max-width: 900px;
+        margin-right: 0 auto; 
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    
+    .container {
+        padding:0;
+    }
+    
+    img {
+        width: 200px;
+    }
+    .mods {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 5px dotted #FA343A;
+        padding-bottom: 10px;
+    }
+    button {
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 3rem;
+        
+    }
+    p {
+        font-size: 2rem;
+        
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+        background-color: #FA343A;  
+    }
+    a:hover {
+        color: #0468B3;
+    }
+
+    
+}
