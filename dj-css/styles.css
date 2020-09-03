@@ -1,0 +1,107 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: salmon;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+
+}
+
+audio {
+    display: none;
+}
+header {
+    
+    text-align: center;
+    font-size: 2rem;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 100px auto;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    
+      
+}
+
+.one {
+    transition: transform 2s ease-out, background-color 2s ease-out, box-shadow 2s ease-in-out;
+    box-shadow: 5px 10px 2px #EFE7BC;
+}
+
+.one:hover {
+    transform: rotate(180deg);
+    background-color: yellowgreen;
+    box-shadow: none;
+}
+
+
+.two {
+    box-shadow: 5px 10px 2px #EFE7BC;
+    transition: background-color 500ms ease-out, border-radius 1s ease-out, box-shadow 1s ease-in-out;
+}
+
+.two:hover {
+    background-color: firebrick;
+    border-radius: 15px 50px;
+    box-shadow: none;
+}
+
+.three {
+    box-shadow: 5px 10px 2px #EFE7BC;
+    transition: border-radius 1s ease-in-out, background-color 2s linear, box-shadow 500ms ease-out;
+}
+.three:hover {
+    border-radius: 100%;
+    background-color: blue;
+    box-shadow: none;
+}
+
+.four {
+   transition: opacity 2s ease-in-out, box-shadow 2s ease-in-out;
+   box-shadow: 5px 10px 2px #EFE7BC;
+}
+
+.four:hover {
+    opacity: 0;
+    box-shadow: none;
+}
+
+
+.five {
+    transition:  box-shadow 1s  ease-in, transform 1s ease-in, box-shadow 1s ease-in-out, background-color 1s ease-in; 
+    box-shadow: 5px 10px 2px #EFE7BC;
+}
+.five:hover {
+    box-shadow: none;
+    transform: translate(0, 100px);
+    background-color: green;
+}
+
+
+
+.six {
+    transition: width 1s linear, height 1s linear, box-shadow 1s ease-in-out, background-color 1s ease-in-out; 
+    box-shadow: 5px 10px 2px #EFE7BC; 
+}
+
+.six:hover {
+    width: 100px;
+    height: 300px;
+    box-shadow: none;
+    background-color: red;
+}
