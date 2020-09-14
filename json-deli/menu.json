@@ -1,0 +1,61 @@
+{
+    "menu" :
+        {
+        "appetizer": [
+            {
+                "name": "salad",
+                "ingredients": ["lettuce", "tomatoes", "cucumber"],
+                "description": "A refreshing and simple healthy alternative to regular greasy food."   
+                },
+                 {
+                     "name" : "stuffed musrooms",
+                     "ingredients": ["1 1/2 lb. baby mushrooms", "2 cloves garlic, minced", "1/4 c. breadcrumbs" ],
+                     "description": "A scrumptious yet savory appetizer overflowing with flavor"
+                    },
+                  {
+                      "name" : "taco bites",
+                      "ingredients" : ["ground beef", "salsa", "onion", "cumin", "corn tortilla"],
+                      "description" : "A savory and spicy treat from across the border."
+                      }
+                    ],
+            "cold sandwiches": [{
+                "name": "cobb salad sub",
+                "ingredients": ["Italian bread", "1/2 cup balsamic dressing", " eggs", "bacon"],
+                "description": "Enjoy your favorite sald on bread"
+                }, 
+                {
+                    "name" : "turkey wraps",
+                    "ingredients": ["fresh cut turkey", "lettuce", "swiss cheese", "bacon"],
+                    "description": "Turkey Club Wraps filled with turkey (or rotisserie chicken), bacon, lettuce, tomato, cheese and avocado."}, {
+                        "name": "chicken club wrap",
+                        "ingredients": [ "skinless chicken breast", "whole wheat", "greek yogurt", "avacodo", "lettuce"],
+                        "description" : "Whole-wheat tortillas provide a tasty twist in this quick grilled chicken breast recipe that combines all the elements of a classic club sandwich into a wrap." }
+                ],
+            "hot sandwiches" : [
+                {
+                "name": "Reuben Grilled Cheese",
+                "ingredients": [ "Corned beef", "melted Swiss"," sauerkraut", "Thousand Island dressing"],
+                "description": "A classic American sandwich! Corned beef, melted Swiss, sauerkraut, and Thousand Island dressing. So cheesy and just so darn easy!"},
+                 { 
+                     "name": "Caprese Sandwiches",
+                    "ingredients": ["Focaccia", "Fresh mozzarella cheese ", "Tomatoes", "Arugula" ],
+                    "description" : "Chewy, savory and delicious"
+                }, 
+                    {
+                     "name":"Bacon, and Brie Panini",
+                     "ingredients": ["bacon","cranberries", "brie cheese", "butter", "bread"],
+                     "description": "A deliciously savory lunch selection"
+                    }],
+            "desserts" : [
+                {"name": "ice cream"},
+                {"name": "lava cake"},
+                {"name":"cheese cake"}
+                    ],
+            "drinks": [
+                {"name": "coke"},
+                { "name":"pepsi"}, 
+                {"name":"sprite"}]
+        }
+ 
+
+}
