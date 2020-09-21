@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Todo Tracker | Your Favorite Todo App</title>
+    </head>
+    <body>
+        
+
+        
+        <div id="container">
+            <header>
+            <h1>Todo Tracker</h1>
+            <p>Do it, did it, done with it!</p>
+        </header>
+            <ul class="todo-list">
+                
+            </ul>
+
+            <form name="create-todo" id="form">
+                Add New Task Below:
+                <input class="inputItem" name="title" placeholder="Input Title" required>
+                <input  class="inputItem" type="number" name="price" placeholder="Input Price">
+                <input class="inputItem" name="description" placeholder="Input Description">
+                <input  class="inputItem" name="img" placeholder="Input Image URL">
+                <br>
+                <button>Submit</button>
+            </form>
+        </div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
