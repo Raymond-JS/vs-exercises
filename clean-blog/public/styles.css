@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-size:20px;
+    color:#212529;
+    background-color: #fff;;
+    font-family:'Lora','Times New Roman',serif;
+    box-sizing: border-box;
+    
+}
+
+.header {
+    background-image: url(./home-background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 500px;
+    text-align: center;
+    
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
+}
+
+li > a:hover {
+    color: #ddd;
+}
+
+.header p {
+    color: white;
+}
+.overlay{
+   
+	position:absolute;
+	top:0;
+	left:0;
+	height: 500px;
+	width:100%;
+	background-color:#212529;
+	opacity:.5
+}
+
+
+h1 {
+    font-size:80px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.top-display {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContent {
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+h1,h2,h4,h5,h6{
+	font-weight:800;
+	font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+h3 {
+    font-weight: 300;
+   
+}
+.brand, li {
+    font-weight: 800;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+    
+}
+
+ul, li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+    padding: 10px 20px;
+
+}
+
+.single {
+    border-bottom: 1px solid #ddd;
+    width: 650px;
+    
+}
+
+.single a {
+    color: black;
+    text-decoration: none;
+    transition: color 200ms linear;
+}
+
+.single a:hover {
+    color: #0085a1;
+}
+
+.single p {
+    color: #868e96;
+    font-style: italic;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: small;
+    height: 100px;
+    padding: 2em;
+}
+
+.footer ul {
+    margin-bottom: 0;
+}
+
+.footer li {
+    font-size: 26px;
+    
+    
+}
+
+.media {
+    margin-bottom: 0;
+}
+.footer a {
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 50%;
+
+}
+footer p {
+    margin-bottom: 15px;
+}
+
+.footer a:hover {
+    background-color: #0085a1;
+}
+
+.btn {
+    color: white;
+    background-color: #0085a1;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    margin: 15px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    float: right;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
