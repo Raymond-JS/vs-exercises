@@ -1,0 +1,104 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+   text-align: center;
+}
+
+
+h1 {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    padding: 2rem;
+}
+
+h3 {
+   font-size: x-large;
+}
+.coolBtn {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    }
+
+.coolBtn:hover  {
+    color: #ffffff !important;
+    background: #60a3bc;
+    border-color: #60a3bc; !important;
+    transition: all 0.4s ease 0s;
+    }
+    
+.coolBtn:focus {outline:0;}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+
+}
+
+.cube {
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 3s infinite ease-out;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 175px;
+    margin: -60px auto;
+    
+    
+  }
+  
+  .cube div {
+     width: 100px;
+     height: 100px;
+     line-height: 100px;
+     text-align: center;
+     box-shadow: inset 0px 0px 0px 1px rgba(10, 0, 0, 0.8);
+     background: #60a3bc;
+     display: block;
+     position: absolute;
+     
+  }
+  
+  .cube div.top {
+     -webkit-transform: rotateX(90deg); 
+    margin-top: -50px;
+  }
+  
+  .cube div.right {
+     -webkit-transform: rotateY(90deg); 
+    margin-left: 50px;
+  }
+  
+  .cube div.bottom {
+     -webkit-transform: rotateX(-90deg); 
+    margin-top: 50px;
+  }
+  
+  .cube div.left {
+     -webkit-transform: rotateY(-90deg); 
+    margin-left: -50px;
+  }
+  
+  .cube div.front {
+     -webkit-transform: translateZ(50px);
+  }
+  
+  .cube div.back {
+     -webkit-transform: translateZ(-50px) rotateX(180deg);
+  }
+  
+  @-webkit-keyframes spin {
+    0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
+    100% {-webkit-transform: rotateX(-20deg) rotateY(740deg);}
+  }
