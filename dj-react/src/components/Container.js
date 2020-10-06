@@ -77,7 +77,7 @@ class Container extends React.Component {
                     {allSquares}            
                 </div>
                 <div className="btnContainer">
-                  <button className="btn"  onClick={this.handleClick}>Black <span></span></button>
+                  <button className="btn"  onClick={this.handleClick}>Black/White <span></span></button>
                   <button className="btn"  onClick={this.handleTopHalf}>Purple <span></span></button>
                   <button className="btn"  onClick={this.handleBtnLeft}>Blue 1<span></span></button>
                   <button className="btn"  onClick={this.handleBtnRight}>Blue 2 <span></span></button>
