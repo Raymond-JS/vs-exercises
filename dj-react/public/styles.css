@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.header {
+  background-color: black;
+  padding: 1em;
+  color: #f4511e;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+.container {
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1px;
+    grid-template-rows: 400px 400px;
+   
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+  }
+
+  .btn:hover {
+    background-color: tomato;
+  }
+
+  .btnContainer {
+    background: black;
+    padding: 2em;
+  }
