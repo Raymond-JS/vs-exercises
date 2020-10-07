@@ -29,6 +29,10 @@ class DiceBox extends React.Component {
         })
 
     }
+
+    formatNums(arr) {
+        return 'Your Lucky Numbers Are: ' + arr.join(', ');
+    }
     
     
     render() {
@@ -37,7 +41,7 @@ class DiceBox extends React.Component {
             <div className="container">
                  <Dice nums={this.state.numbers} />
                  <Button onClick={this.randomNum}/>
-                <h3>Your Lucky Numbers Are: {this.state.numbers}</h3>
+                <h3>{this.formatNums(this.state.numbers)}</h3>
 
             </div>
         )
