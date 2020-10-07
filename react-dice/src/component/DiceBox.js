@@ -15,13 +15,19 @@ class DiceBox extends React.Component {
 
     randomNum() {
         let numbers = [];
-        let num1 = Math.floor(Math.random() * 6) + 1;
-        let num2 = Math.floor(Math.random() * 6) + 1;
-        let num3 = Math.floor(Math.random() * 6) + 1;
-        let num4 = Math.floor(Math.random() * 6) + 1;
-        let num5 = Math.floor(Math.random() * 6) + 1;
-        let num6 = Math.floor(Math.random() * 6) + 1;
-        numbers.push(num1, num2, num3, num4, num5, num6);
+        for (let i = 0; i < 6; i++) {
+            const randomNum = Math.floor(Math.random() * 6) + 1;
+            numbers.push(randomNum)
+        }
+
+        // let num1 = Math.floor(Math.random() * 6) + 1;
+        // let num2 = Math.floor(Math.random() * 6) + 1;
+        // let num3 = Math.floor(Math.random() * 6) + 1;
+        // let num4 = Math.floor(Math.random() * 6) + 1;
+        // let num5 = Math.floor(Math.random() * 6) + 1;
+        // let num6 = Math.floor(Math.random() * 6) + 1;
+        // numbers.push(num1, num2, num3, num4, num5, num6);
+        
         this.setState(()=> {
             return {
                 numbers: numbers
