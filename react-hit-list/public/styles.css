@@ -1,0 +1,46 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #ddd;
+   font-family: 'Roboto', sans-serif;
+}
+
+.header {
+     
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: red;
+    font-size: 1.5em;
+    padding-left: .5em;
+}
+
+.imgSize {
+    height: 300px;
+    width: 250px;
+}
+
+.targetContainer {
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 55px auto;
+      
+}
+
+.eachTarget {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.nameBanner {
+    position: absolute;
+    bottom: 3px;
+    text-align: center;
+    background-color: black;
+    color: red;
+    width: 100%;
+    opacity: .7;
+}
