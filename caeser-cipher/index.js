@@ -3,6 +3,7 @@ var input = readline.question('What phrase would you like to encrypt? ').toLower
 var shift = parseInt(readline.question('How many letters would you like to shift? '));
 
 const alphabet = [ "a"," b","c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m","n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "a"," b","c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m","n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
 const phrase = input.split(" "); //splitting the input at any space.
 
 
@@ -30,7 +31,7 @@ const phrase = input.split(" "); //splitting the input at any space.
                         
 newPhrase = newPhrase.toString(); // turning the array obj into a string
 let obsfucated = newPhrase.split(" ").join(''); // removing space.
- obsfucated = obsfucated.replace(/,/g, " "); // using regex to replace any commas
+obsfucated = obsfucated.replace(/,/g, " "); // using regex to replace any commas
 console.log(`Your encrypted message is: ${obsfucated}`);
 
 
