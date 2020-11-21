@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EEEEEE;
+  
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  background-color: #2d397d;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fancy {
+  color: white;
+	font-size: 47px;
+	-webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 2px 4px blue;
+}
+
+a {
+  color: white;
+	font-size: 16px;
+  -webkit-text-stroke: 1px #F8F8F8;
+  padding: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  text-align: justify;
+}
+
+h1 {
+  margin-left: 2em;
+}
+
+nav {
+  margin-right: 10em;
+}
+
+footer {
+  position: fixed;
+  background-color: #2d397d;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+}
+
+.ctr {
+  margin: 0 auto;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+}
+
+
+.content {
+  padding: 2em;
+  text-align: justify;
+  
+ 
+}
+h2 {
+  
+  text-align: center;
+}
+.blu {
+  color: blue;
+  font-weight: 600;
+}
+.btn {
+  color: #2d397d;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  h1 {
+    margin: 0;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    
+  }
+ nav {
+   margin: 10px auto;
+ }
+  
+  .content {
+    grid-column: 1/2;
+    
+  }
+  img {
+    width: 375px;
+  }
+  
+}
+
