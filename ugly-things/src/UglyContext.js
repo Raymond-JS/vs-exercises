@@ -84,8 +84,7 @@ class UglyContext extends Component {
    
 
 
-     edit = (i) => {
-         
+     edit = (i) => {   
          let indexNum = i
          let theUglyArray = this.state.uglyThings;
         
