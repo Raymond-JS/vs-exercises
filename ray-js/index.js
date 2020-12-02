@@ -26,7 +26,7 @@ function print(location, text) {
 setTimeout(() => print(intro, name), 650)
 setTimeout(() => nav.style.opacity = 1, 1000)
 
-skills.addEventListener("click" , console.log("yo"))
+
 function display( block) {
   if ( block.style.position === "absolute") {
    block.style.position = "static" 
