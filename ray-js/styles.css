@@ -5,33 +5,33 @@ body {
     background-color: #C5C1C0;
     font-size: 1.125rem;
     color: #0A1612;
-    
+    box-sizing: border-box;   
 }
 
 
 
 #container {
-   
     display: flex;
     max-width: 850px;
     min-height: 100vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
     padding: 0 2rem;
-   
 }
 
 header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin: auto;
     min-height: 200px;
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 50px;
     opacity: 0;
     transition: 3s;
@@ -49,31 +49,20 @@ h2 {
     cursor: pointer;
     transition: 200ms;
     margin-bottom: 25px;
+    
 }
 
 h2:hover {
-    border-bottom: 10px solid #F7CE3E;
-    padding-bottom: 3px;
-    width: 75%;
-    
+    border-bottom: 5px solid #F7CE3E;
 }
 
 .skillsInfo,
 .aboutInfo,
 .projectInfo {
-    text-align: left;
-    position:absolute;
-    opacity: 0;
-    transition: .41s ease;
     text-align: center;
     padding: 1rem;
     width: 80%;
     margin: auto;
-}
-
-.closeBox {
-    position:absolute;
-    opacity: 0;
 }
 
 li {

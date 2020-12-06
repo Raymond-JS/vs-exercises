@@ -28,13 +28,12 @@ setTimeout(() => nav.style.opacity = 1, 1000)
 
 
 function display( block) {
-  if ( block.style.position === "absolute") {
-   block.style.position = "static" 
-   block.style.opacity = 1 
+  if (block.style.display === "none") {
+    block.style.display = "block"
   } else {
-    block.style.position = "absolute" 
-    block.style.opacity = 0
-
+    block.style.display = "none"
   }
-
+   
+  
 }
+
