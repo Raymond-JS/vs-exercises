@@ -34,13 +34,13 @@ const bounties = [
 
 bountyRouter.route("/")
   .get((req, res) => {
-      res.send(bounties)
+      res.status(200).send(bounties)
   })
   .post((req, res) => {
       const newBounty = req.body
       newBounty._id = uuid()
       bounties.push(newBounty)
-      res.send(newBounty)
+      res.status(201).send(newBounty)
   })
 
   
@@ -51,13 +51,13 @@ bountyRouter.route("/")
      const updatedObject = req.body
      const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyToUpdate)
      const updatedBounty = Object.assign(bounties[bountyIndex], updatedObject)
-     res.send(updatedBounty)
+     res.status(201).send(updatedBounty)
   })
   .delete((req, res) => {
       const bountyToDelete = req.params.bountyId
       const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyToDelete)
       bounties.splice(bountyIndex, 1)
-      res.send("Bounty deleted successfully")
+      res.status(200).send("Bounty deleted successfully")
   })
 
 

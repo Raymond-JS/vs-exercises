@@ -8,40 +8,56 @@
         <title>Ray Johnson | Web Developer Virginia Beach, Virginia</title>
     </head>
     <body>
+
+        <!-- Projects -->
+        <div class="projects">
+             <div id="projects-container">
+                <span onclick="hideProjects()" class="close"></span>
+                <h2>Projects:</h2>
+                <div class="card">
+                    <img src="images/ron-swanson-quotes.png" alt="ron swanson quote" style="width: 100%">
+                    <div class="card-container">
+                      <h4><b>Swanson's Wisdom</b></h4> 
+                      <p>A quote generator project built in React.js with Axios. <a class="visit" href="https://quotes-by-ron.surge.sh/" target="_blank">VISIT</a></p> 
+                      
+                      <br>
+                    </div>
+                  </div>
+
+             </div>
+        </div>
+
+ <!-- Main Page -->
         <div id="container">
            <header>
             <h1><span class="intro"></span></h1>
             web developer
            </header>
            <div class="skillsInfo" style="display: none;">
-               
                 <p><b>Front-End:</b>JavaScript/ES6, React.JS, CSS, HTML</p>
                 <p><b>Back-End:</b> Node.js, Express, Mongoose, MongoDB</p>
                 
                
            </div>
-           <div class="projectInfo" style="display: none;">
-                <p>Coming ✖️ Soon</p>
-                 
-        
-           </div>
+           
            <div class="aboutInfo" style="display: none;">   
-                <p> I started my career on the internet crafting search engine optimization strategies for entertainment brands. Over the last ten years I've generated over 50 million unique visits from search engines. In an effort to fuel my creative desire, I took the leap from search engine optimization to web development. I have a natural curiosity for how sites work and the glue that holds them together.<br> I currently spend my days <span class="emojis">🍽️ 😴 👨‍💻 🔁</span>.</p>
+                <p> I started my career on the internet crafting search engine optimization strategies for entertainment brands. Over the last ten years I've helped to generate millions of unique visits from search engines. In an effort to fuel my creative desire, I took the leap from search engine optimization to web development. I have a natural curiosity for how sites work and the glue that holds them together. I look forward to working on new and exciting projects. </p>
                 
             </div>
 
+           
+
             <nav class="nav">
-                <h2 onclick="display(skills)">Skills</h2>
-                <h2 onclick="display(projects)">Projects</h2>
-                <h2 onclick="display(about)">About</h2>
+                <h2 class="accent" onclick="display(skills)">< Skills ></Projects></h2>
+                <h2 class="accent" onclick="showProjects()">< Projects ></Projects></h2>
+                <h2 class="accent" onclick="display(about)">< About ></About></h2>
             </nav>
                 
            
 
 
-
             <footer>
-                <a href="mailto:contact@rayjohnson.tech" target="_blank" rel="noreferrer">Let's Talk</a> | <a href="https://github.com/Raymond-JS" target="_blank" rel="noreferrer">GitHub</a> | <a href="#">Resume </a>
+                <a class="accent" href="mailto:contact@rayjohnson.tech" target="_blank" rel="noreferrer" >Let's Talk</a> | <a class="accent" href="https://github.com/Raymond-JS" target="_blank" rel="noreferrer">GitHub</a> | <a class="accent" href="#">Resume </a>
             </footer>
 
         </div>

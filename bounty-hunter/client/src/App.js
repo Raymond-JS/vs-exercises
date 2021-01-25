@@ -10,7 +10,7 @@ function App() {
     function getBounty() {
         axios.get("/bounty")
         .then(res => setBounty(res.data))
-        .catch(err => console.log(err))
+        .catch(err => console.log(err.response.data.errMsg))
     }
 
     function addBounty(newBounty){
@@ -18,7 +18,7 @@ function App() {
         .then(res => {
             setBounty(prevBounty => [...prevBounty, res.data])
         })
-        .catch(err => console.log(err))
+        .catch(err => console.log(err.response.data.errMsg))
     }
 
     function deleteBounty(bountyId) {
@@ -26,7 +26,7 @@ function App() {
         .then(res => {
             setBounty(prevBounty => prevBounty.filter( bounty => bounty._id !== bountyId ))
         })
-        .catch(err => console.log(err))
+        .catch(err => console.log(err.response.data.errMsg))
     }
 
     function editBounty(updatedBounty, bountyId) {
@@ -35,7 +35,7 @@ function App() {
               setBounty( prevBounty => prevBounty.map(bounty => bounty._id !== bountyId ? bounty : res.data
                    ))
           })
-          .catch(err => console.log(err))   
+          .catch(err => console.log(err.response.data.errMsg))   
 
     }
 
