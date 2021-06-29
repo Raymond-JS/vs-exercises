@@ -3,10 +3,10 @@ let form = document["pest-control"];
 let totalDisplay = document.querySelector("span");
 
 
+console.log(form)
 
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
     let goombas = form.goombas.value;
     let bobs = form.bobs.value;
     let cheeps = form.cheeps.value;
@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
 })
 
 
-
+// Calculate The Total
 function calc(goombaNum, bobsNum, cheepsNum) {
     let sumOne = goombaNum * 5; 
     let sumTwo = bobsNum * 7; 
