@@ -1,54 +1,53 @@
 // Grabbing Elements, Setting Elements, Global Variables
-let displayNum = document.querySelector("span.display-num");
-let btn = document.querySelector(".btn");
-let recentScore = document.querySelector(".recent-score");
-let countDown = document.querySelector(".countdown");
+const displayNum = document.querySelector("span.display-num");
+const btn = document.querySelector(".btn");
+const lastScore = document.querySelector(".last-score");
+const countDown = document.querySelector(".countdown");
 countDown.innerHTML = 15;
 let stopWatch;
 let clicks = 0;
 
-// Clicks Counter To Update
+// Counter To Update Clicks
 function counter() {   
     clicks++;
-    console.log(clicks)
     displayNum.textContent = clicks;
 }
 
-// Event Listener On Button & Document
+// Adding Event Listener On Button & Document
 btn.addEventListener("click", () => {
     btn.style.display = "none";
     document.addEventListener("click", counter);
     setTimeout( finalNum, 15000);
     stopWatch = setInterval(decrease, 1000) 
-    setTimeout( stopDecrease, 15000);
+    setTimeout( stopDecrease, 15500);
 } )
 
 
-// Functions Below:
+// Decreasing the countdown number
 function decrease() {
     countDown.innerHTML--;
 }
 
+// clearing the second countdown
 function stopDecrease() {
     clearInterval(stopWatch);
 }
 
+
+// Removing Click Counter. Setting Storage. Setting Display Color.
+
 function finalNum(stopDecrease) {
     document.removeEventListener("click", counter );
     localStorage.setItem("clicks", displayNum.textContent);
-    if ( parseInt(recentScore.textContent) >= parseInt(displayNum.textContent) ) {
-        displayNum.style.backgroundColor = "red";
-        stopDecrease;
+    if ( parseInt(lastScore.textContent) >= parseInt(displayNum.textContent) ) {
+        displayNum.style.backgroundColor = "red";      
     } else {
         displayNum.style.backgroundColor = "green";
-        console.log( displayNum.textContent )
-        stopDecrease;
     }
     
 }
 
 // Display Most Recent Score
-
-recentScore.textContent = localStorage.getItem("clicks");
+lastScore.textContent = localStorage.getItem("clicks");
 
 
