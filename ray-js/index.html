@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;600;700&amp;display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+        <title>Ray Johnson | Web Developer Virginia Beach, Virginia</title>
+    </head>
+    <body>
+
+        <!-- Projects -->
+        <div class="projects">
+            <h2>Projects:</h2>
+             <div id="projects-container">
+                <span onclick="hideProjects()" class="close"></span>
+                
+                <div class="card">
+                    <img src="images/ron-swanson-quotes.png" alt="ron swanson quote" style="width: 100%">
+                    <div class="card-container">
+                      <h4><b>Swanson's Wisdom</b></h4> 
+                      <p>A quote generator project built in React.js with Axios.<hr />
+                         <a class="accent" href="https://quotes-by-ron.surge.sh/" target="_blank">VISIT</a> | <a class="accent" href="https://github.com/Raymond-JS/vs-exercises/tree/master/swanson-quote-generator/src" target="_blank">CODE</a> </p> 
+                      
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="images/furry.jpeg" alt="ron swanson quote" style="width: 100%">
+                    <div class="card-container">
+                      <h4><b>Furry Friends</b></h4> 
+                      <p>Working with data via Reddit's API to fetch, format and display images and info from a specific pet lover's subreddit. Built in vanilla JavaScript, HTML and CSS.<hr />
+                        <a class="accent" href="https://furry-smiled.surge.sh/" target="_blank">VISIT</a> | <a class="accent" href="https://github.com/Raymond-JS/vs-exercises/commit/18811b524b55b8006bdb6a4c7f56c6c8d0347c36" target="_blank">CODE</a></p> 
+                      
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="images/groceries-im.jpeg" alt="react-shopping-cart" style="width: 100%">
+                    <div class="card-container">
+                      <h4><b>React Shopping App</b></h4> 
+                      <p>A supermarket app built with React.js 
+                        <hr />
+                        <a class="accent" href="#" target="_blank">Coming Soon</a></p> 
+                      
+                    </div>
+                  </div>
+                  
+
+             </div>
+        </div>
+<!-- End Projects -->
+
+ <!-- Main Page -->
+ 
+        <div id="container">
+
+          <nav class="hidden">  
+            <span class="navLink" onclick="showProjects()">Projects </span>
+            
+          </nav>
+
+           <section class="greeting">
+            <h1><span class="intro"></span></h1>
+            <span class="title"></span>
+           </section>
+           
+           <div class="aboutInfo hidden"> 
+            <h2>Skills:</h2>
+            <p>HTML, CSS, JavaScript/ES6, React,
+              Node,  Express, Axios, and Fetch API </p>  
+             <h2>About:</h2> 
+                <p> I started my career on the internet crafting search engine optimization strategies for entertainment brands. Over the last ten years I've helped to generate millions of unique visits from search engines. In an effort to fuel my creative desire, I took the leap from search engine optimization to <em>web developer</em>. I have a natural curiosity for how sites work and the glue that holds them together. I look forward to working on new and exciting projects. </p>
+                
+            </div>
+
+           
+                
+           
+
+
+            <footer class="hidden">
+                <a class="accent" href="mailto:contact@rayjohnson.tech" target="_blank" rel="noreferrer" >Email</a> | <a class="accent" href="https://github.com/Raymond-JS" target="_blank" rel="noreferrer">GitHub</a> 
+            </footer>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
