@@ -1,32 +1,43 @@
 body, html {
   height: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
   background: #1b252f;
   font-family: 'Lato', sans-serif;
   color: white;
 
 }
+
 header {
     display: flex;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-.content {
-    min-height: 90vh;
-    margin: 0 5rem -100px;
+.nav {
+    display: flex;
+    justify-content: center;
+
 }
 
-h1 {
-    margin-left: 5rem;
+.next-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;  
+}
+
+
 
 .scrape-btn {
     color: #e30b5c;
-    font-size: 1.2rem;
-    margin-top: 5rem;
-    margin-left: 5rem;
     width: 180px;
     height: 60px;
     cursor: pointer;
@@ -34,7 +45,8 @@ h1 {
     border: 1px solid #e30b5c;
     outline: none;
     transition: 500ms ease-in-out;
-    
+    font-weight: 700;
+    font-size: 19px;
 }
 
 .scrape-btn:hover {
@@ -45,38 +57,46 @@ h1 {
 
   #pics {
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
   }
-
+div#pics {
+    margin-bottom: 0 !important;
+}
  
   a {
     text-decoration: none;
     color: white;
   }
 
-  
+  #pics div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    border: 1px solid #1b252f;
+  }
 
+
+ h4 {
+    margin-bottom: 5px;
+    padding: 0;
+ }
   img {
       width: 450px;
       height: 450px;
       border-radius: 12px;
-  }
-
-  img:hover {
-      border-radius: 0px;
-      transform: scale(1.2)
-  }
+  } 
 
   .footer {
-      height: 100px;
-      padding: 0 5rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 10px solid #e30b5c;
-      font-size: larger;
+    
+    border-top: 10px solid #e30b5c;
+    font-size: larger;
+     text-align: center;
+     margin-top: 10px;
+     padding: 5px;
   }
 
     a.me {
@@ -86,20 +106,6 @@ h1 {
     color: #e30b5c;
     }
 
-  #more-button, #top-button {
-    margin: 0;
-  }
+  
 
-  @media only screen and (max-device-width: 500px) {
-
-    .footer {
-        flex-wrap: wrap;
-        justify-content: center;
-       
-    }
-    #more-button, #top-button {
-        margin: 5px;
-      }
-   
-      
-  }
+  

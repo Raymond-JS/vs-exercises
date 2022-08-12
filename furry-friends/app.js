@@ -1,5 +1,5 @@
 const button = document.querySelector(".scrape-btn")
-const moreBtn = document.querySelector("#more-button")
+const moreBtn = document.querySelector(".more-button")
 const wrapper = document.querySelector(".content")
 let after = '';
 const hasPic = "https://i.redd.it/";
@@ -47,15 +47,19 @@ const fetchPics = () => {
             }
             
         })
+     
         wrapper.appendChild(parentDiv)
         
     })
 }
 
-button.addEventListener("click", () => {
+window.onload = function () {
     fetchPics();
-} )
+   
+}
+ moreBtn.addEventListener("click", () => {
+		console.log("clicked");
+		fetchPics();
+ });
 
-moreBtn.addEventListener("click", () => {
-    fetchPics();
-})
+
